@@ -78,7 +78,8 @@ document.querySelector(".btn-hold").addEventListener("click",function(){
     document.querySelector("#score-"+activePlayer).textContent=scores[activePlayer];
 
     //check for the winner
-    if(scores[activePlayer] >= 20){
+    winning=document.querySelector(".winning-score").value;
+    if(scores[activePlayer] >= winning){
 
         document.querySelector(".player-"+activePlayer+"-panel").classList.remove("active");
         document.querySelector(".player-"+activePlayer+"-panel").classList.add("winner");
