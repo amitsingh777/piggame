@@ -137,7 +137,7 @@ button:focus {
     outline: none;
 }
 
-i {
+i>*{
     color: #EB4D4D;
     display: inline-block;
     margin-right: 15px;
